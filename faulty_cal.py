@@ -5,21 +5,21 @@ the following ones:
 Your program should take operator  and the two numbers as input from the user
 and then return the result """
 
-n1=int(input("Enter the first number"))
-n2=int(input("Enter the second number"))
-o=input("Enter the operator (Eg- +,-,*,/)")
-if o=="+":
-    if (n1==56 and n2==9) or (n1==9 and n2==56):
+n1 = int(input("Enter the first number"))
+n2 = int(input("Enter the second number"))
+o = input("Enter the operator (Eg- +,-,*,/)")
+if o == "+":
+    if (n1 == 56 and n2 == 9) or (n1 == 9 and n2 == 56):
         print("77")
     else:
         print(n1+n2)
-elif o=="*":
-    if (n1==45 and n2 ==3) or (n2==45 and n1==3):
+elif o == "*":
+    if (n1 == 45 and n2 == 3) or (n2 == 45 and n1 == 3):
         print("555")
     else:
         print(n1*n2)
-elif o=="/":
-    if n1==56 and n2==6:
+elif o == "/":
+    if n1 == 56 and n2 == 6:
         print("4")
     else:
         print(n1/n2)
