@@ -1,3 +1,5 @@
+#A guessing game.
+
 a=18
 i=1
 n=int(input("Enter a number"))
