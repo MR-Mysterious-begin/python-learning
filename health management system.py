@@ -4,7 +4,7 @@ Also the user must be able to access these text files for just seeing
 No. of users = 3
 
 NOTE- I am not going to upload the text files since I will be using those for personal use also. You can create your own files and
-change the name accordingly in a program
+change the name accordingly in the program
 
 """
 
@@ -18,18 +18,18 @@ n1=int(input("Do you want to lock data or retrieve data (1/2)"))
 n2=int(input("Exercise or Food? (1/2)"))
 dt=str(getdate()) + ": /n"
 if n2 == 1:
-    if n == 1: f=open('Exercise_lock_user_1', 'r+')
-    elif n == 2: f=open('exercise lock user 2', 'r+')
-    elif n == 3: f=open('exercise lock user 3', 'r+')
+    if n == 1: f=open('e1', 'r+')
+    elif n == 2: f=open('e2', 'r+')
+    elif n == 3: f=open('e3', 'r+')
 elif n2 == 2:
-    if n == 1: f=open('food lock user 1', 'r+')
-    elif n == 2: f=open('food lock user 2', 'r+')
-    elif n == 3: f=open('food lock user 3', 'r+')
+    if n == 1: f=open('f1', 'r+')
+    elif n == 2: f=open('f2', 'r+')
+    elif n == 3: f=open('f3', 'r+')
 if n1 == 2:
     print(f.read())
 elif n1 == 1:
     e=input("Enter the name of the exercise/food .")
     f.write(dt)
     f.write(e)
-    print("This is stored")
+    print("This is stored as", dt, e)
 f.close()
